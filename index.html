@@ -11,10 +11,14 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <!-- FIM GOOGLE FONTS -->
-    <!--Bootstrap Icons-->   
+    <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--Fim Bootstrap Icons--> 
+    <!--Fim Bootstrap Icons-->
     <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+
+
     <title>Beaver Tech</title>
 </head>
 
@@ -26,6 +30,7 @@
                     <img src="images/logo.png" alt="Logo da Agência Wellynton">
                 </a>
             </div><!--logo-->
+
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#">Inicio</a></li>
@@ -39,8 +44,29 @@
                 <a href="#">
                     <button>Contato</button>
                 </a>
-
             </div> <!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div><!-- menu-mobile -->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div> <!--interface-->
     </header>
 
@@ -75,44 +101,54 @@
                     <div class="especialidades-box">
                         <i class="bi bi-code-square"></i>
                         <h3>WebSite</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit velit rerum iure adipisci molestias ea dolores maxime consectetur provident? Quae id tempore omnis ratione unde recusandae quis, iste dolorum..</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae suscipit velit rerum iure
+                            adipisci molestias ea dolores maxime consectetur provident? Quae id tempore omnis ratione
+                            unde recusandae quis, iste dolorum..</p>
                     </div><!--especialidades-box-->
 
                     <div class="especialidades-box">
                         <i class="bi bi-cart"></i>
                         <h3>Loja online</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla sint excepturi, ipsa sit doloribus perspiciatis nostrum natus vel vero ipsam architecto repellendus reiciendis doloremque ullam rerum provident possimus reprehenderit.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla sint excepturi, ipsa sit
+                            doloribus perspiciatis nostrum natus vel vero ipsam architecto repellendus reiciendis
+                            doloremque ullam rerum provident possimus reprehenderit.</p>
                     </div><!--especialidades-box-->
 
                     <div class="especialidades-box">
                         <i class="bi bi-wordpress"></i>
                         <h3>Blog</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati laudantium iure facilis necessitatibus. Minus vero veniam ratione sint sit magnam veritatis natus, inventore sequi velit non incidunt blanditiis laborum nostrum?</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati laudantium iure facilis
+                            necessitatibus. Minus vero veniam ratione sint sit magnam veritatis natus, inventore sequi
+                            velit non incidunt blanditiis laborum nostrum?</p>
                     </div><!--especialidades-box-->
                 </div> <!--flex -->
             </div> <!--interface-->
         </section><!--especialidades-->
 
-        <section class="sobre">  
+        <section class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
-                            <img src="images/foto.png" alt="">
+                        <img src="images/foto.png" alt="">
                     </div><!-- img-sobre -->
 
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU WELLYNTON GONÇALVES.</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam incidunt nihil voluptas! Doloribus temporibus nihil recusandae magni aperiam beatae minus. Sunt natus, ea provident eos in velit sed hic?</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quaerat suscipit quisquam quas quia recusandae corporis sit? Ex dolorem aliquam consequuntur quaerat mollitia? Accusantium, voluptates cumque? At molestiae libero doloribus!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nam incidunt nihil voluptas!
+                            Doloribus temporibus nihil recusandae magni aperiam beatae minus. Sunt natus, ea provident
+                            eos in velit sed hic?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit quaerat suscipit quisquam
+                            quas quia recusandae corporis sit? Ex dolorem aliquam consequuntur quaerat mollitia?
+                            Accusantium, voluptates cumque? At molestiae libero doloribus!</p>
                         <div class="btn-social">
                             <a href="#"><button><i class="bi bi-instagram"></i></button></a>
                             <a href="#"><button><i class="bi bi-envelope"></i></button></a>
                             <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                            
+
                         </div><!--btn-social-->
                     </div><!--txt-sobre-->
                 </div><!--flex-->
-        </div><!--interface-->
+            </div><!--interface-->
         </section><!--sobre-->
 
         <section class="portfolio">
@@ -120,7 +156,7 @@
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
                     <div class="img-port" style="background-image: url(images/imagem.jpg);">
-                    <div class="overlay">Projeto 1</div>
+                        <div class="overlay">Projeto 1</div>
                     </div>
                     <div class="img-port" style="background-image: url(images/imagem.jpg);">
                         <div class="overlay">Projeto 2</div>
@@ -132,7 +168,7 @@
             </div><!-- interface -->
         </section><!-- portifolio -->
 
-        <section class="formulario"> 
+        <section class="formulario">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
@@ -159,16 +195,17 @@
                         <a href="#"><button><i class="bi bi-instagram"></i></button></a>
                         <a href="#"><button><i class="bi bi-envelope-fill"></i></button></a>
                         <a href="#"><button><i class="bi bi-linkedin"></i></button></a>
-                        
+
                     </div><!--btn-social-->
-            </div>
+                </div>
             </div><!-- line-footer -->
             <div class="line-footer borda">
-                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:beavertechwg@gmail.com">beavertechwg@gmail.com</a></button></p>
+                <p><i class="bi bi-envelope-fill"></i> <a
+                        href="mailto:beavertechwg@gmail.com">beavertechwg@gmail.com</a></button></p>
             </div><!-- line-footer -->
         </div><!-- interface -->
     </footer>
 
 </body>
-</html>
 
+</html>
